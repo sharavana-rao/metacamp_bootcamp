@@ -5,6 +5,8 @@ fn main() {
         balance: (200.00, String::from("SGD"))
         
     };
+
+    //have to use &mut user1 here if not ownership gets moved and can't do multiple function calls to compound. 
     accrue_interest(&mut user1, 10.00);
     accrue_interest(&mut user1, 10.00);
     accrue_interest(&mut user1, 10.00);
